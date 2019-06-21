@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabajo_menu</title>
+<style>
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+#home {
+  left: 0px;
+  width: 46px;
+  background: url('img_navsprites_hover.gif') 0 0;
+}
+
+#prev {
+  left: 63px;
+  width: 43px;
+  background: url('img_navsprites_hover.gif') -47px 0;
+}
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url('img_navsprites_hover.gif') -91px 0;
+}
+
+#home a:hover {
+  background: url('img_navsprites_hover.gif') 0 -45px;
+}
+
+#prev a:hover {
+  background: url('img_navsprites_hover.gif') -47px -45px;
+}
+
+#next a:hover {
+  background: url('img_navsprites_hover.gif') -91px -45px;
+}
+
+div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 150px;
+}
+
+div.desc {
+  padding: 1px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<ul id="navlist">
+  <li id="home"><a href="img1.jpeg" target="fondo_de_imagen"></a></li>
+  <li id="prev"><a href="img2.jpeg" target="fondo_de_imagen"></a></li>
+  <li id="next"><a href="img3.jpeg" target="fondo_de_imagen"></a></li>
+</ul>
+<br>
+<br>
+<br>
+<iframe height="340px" width="600px" src="img1.jpeg" name="fondo_de_imagen"></iframe>
+</body>
+</html>
+
+<!--<div class="gallery">
+  <a target="_blank" href="img1.jpeg">
+    <img src="img1.jpeg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Img1</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img2.jpeg">
+    <img src="img2.jpeg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Img2</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img3.jpeg">
+    <img src="img3.jpeg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Img3</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img4.jpeg">
+    <img src="img4.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Img4</div>
+</div>-->

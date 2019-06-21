@@ -1,3 +1,11 @@
+body{
+	background-color: #87CEEB;
+	font-family: sans-serif;
+}
+h1{
+	font-family: cursive;
+	color: #FF6347;
+}
 ul.estilo_index{
 	list-style-type: none;
 	margin: 0;

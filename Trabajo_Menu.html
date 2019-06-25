@@ -71,6 +71,21 @@ div.desc {
   text-align: center;
 }
 </style>
+<script src="jquery.min.js"></script>
+<script >
+  $(document).ready(function() {
+    $("#M").click(function(){
+      $("#I1").fadeOut(3000);
+      $("#I2").fadeOut("slow");
+      $("#I3").fadeOut();
+    });
+     $("#O").click(function(){
+      $("#I1").fadeIn(3000);
+      $("#I2").fadeIn("slow");
+      $("#I3").fadeIn();
+    });
+  });
+</script>
 </head>
 <body>
 <ul id="navlist">
@@ -81,7 +96,14 @@ div.desc {
 <br>
 <br>
 <br>
-<iframe height="340px" width="600px" src="img1.jpeg" name="fondo_de_imagen"></iframe>
+<iframe height="340px" width="600px" src="img1.jpeg" name="fondo_de_imagen"></iframe><br/>
+<button id="M">Click para ocultar imagenes</button><br/>
+<button id="O">Click para mostrar las imagenes</button><br/>
+<img src="img1.jpeg" id="I1" height="340px" width="600px" >
+<br/>
+<img src="img2.jpeg" id="I2" height="340px" width="600px" >
+<br/>
+<img src="img3.jpeg" id="I3" height="340px" width="600px" >
 </body>
 </html>
 

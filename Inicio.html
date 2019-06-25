@@ -4,9 +4,39 @@
 	<title>Inicio</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#mostrar").click(function() {
+				/* Act on the event */
+				$("p").show();
+			});
+			$("#ocultar").click(function() {
+				/* Act on the event */
+				$("p").hide();
+			});
+			$("#panel2").click(function() {
+				/* Act on the event */
+				$("#mos").slideUp("slow");
+			});
+			$("#panel").click(function() {
+				/* Act on the event */
+				$("#mos").slideDown("slow");
+			});
+		});
+	</script>
 </head>
 <body>
 	<h1>Esta es la página de inicio2</h1>
 	Este trabajo fue realizado por Pablo Chacón Y kevin Moscoso, esperamos que sea de sua grado ya que se ha puesto mucho empeño en la realización del mismo
+	<br/>
+	<p>Este texto tiene la finalidad de enseñarnos cofo funcionan los comando Hide y Show
+	</p>
+	<button id="ocultar">Ocultar</button>
+	<button id="mostrar">Mostrar</button><br/>
+	En galeria probaremos el boton fadeOut
+	<div id="panel">Presiona para leer mas</div>
+	<div id="mos">Continuamos con:</div>
+	<div id="panel2">Presiona para leer menos</div>
 </body>
 </html>

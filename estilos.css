@@ -69,3 +69,12 @@ li.dropdown{
 	.dropdown:hover .dropdown_contenido{
 	display: block;
 }
+#mos, #panel{
+	padding: 5px;
+}
+#mos, #panel2{
+	padding: 5px;
+}
+#mos{
+	display: none;
+}

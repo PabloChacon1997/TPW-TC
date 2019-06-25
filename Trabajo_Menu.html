@@ -84,6 +84,9 @@ div.desc {
       $("#I2").fadeIn("slow");
       $("#I3").fadeIn();
     });
+     $("#parar").click(function(){
+      $("#I1").stop();
+    });
   });
 </script>
 </head>
@@ -98,6 +101,7 @@ div.desc {
 <br>
 <iframe height="340px" width="600px" src="img1.jpeg" name="fondo_de_imagen"></iframe><br/>
 <button id="M">Click para ocultar imagenes</button><br/>
+<button id="parar">Parar</button><br/>
 <button id="O">Click para mostrar las imagenes</button><br/>
 <img src="img1.jpeg" id="I1" height="340px" width="600px" >
 <br/>

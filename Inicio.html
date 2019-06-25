@@ -22,6 +22,11 @@
 			$("#panel").click(function() {
 				/* Act on the event */
 				$("#mos").slideDown("slow");
+				$("button").click(function() {
+				/* Act on the event */
+				alert("Ha iniciado una animacion con el escudo del real madrid");
+				$("#RM").animate({left:'500px'});
+			});
 			});
 		});
 	</script>
@@ -36,7 +41,11 @@
 	<button id="mostrar">Mostrar</button><br/>
 	En galeria probaremos el boton fadeOut
 	<div id="panel">Presiona para leer mas</div>
-	<div id="mos">Continuamos con:</div>
+	<div id="mos">Continuamos con:<br/>
+		Probar mas efectos en Comunidad<br/>
+		<button>Mover a la derecha</button><br/>
+		<img id="RM" src="images.jfif" style="position: absolute;">
+	</div>
 	<div id="panel2">Presiona para leer menos</div>
 </body>
 </html>
